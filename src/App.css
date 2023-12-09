@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(3, 3, 27);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.gradient-bg {
+    background: linear-gradient(to right, rgb(6, 16, 77), #977bfe);
+}
+
+.gradient-text {
+    background: rgb(228, 224, 4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-padding {
+    padding: 4rem 6rem;
+}
+
+.section-margin {
+    margin: 4rem 6rem;
+}
+
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+
+ @-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  @media screen and (max-width:700px) {
+    .section-padding {
+        padding: 4rem;
+    }
+    .section-margin{
+        margin: 4rem
+    }
   }
-}
+
+  @media screen and (max-width:550px) {
+    .section-padding {
+        padding: 4rem 2rem;
+    }
+    .section-margin{
+        margin: 4rem 2rem;
+    }
+  }
+  
+  
