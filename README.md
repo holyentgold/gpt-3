@@ -2,7 +2,7 @@
 ## Usage
 JUST A RESPONSIVE  UI FRONT-END DESIGN 
 ## Screenshot
-![Blackjack](https://github.com/holyentgold/gpt-3/blob/master/gpt3.png)
+![gpt3](https://github.com/holyentgold/gpt-3/blob/master/gpt3.png)
 
 [Link to Website](https://gpt-3-ui-frontend.vercel.app/)
 
